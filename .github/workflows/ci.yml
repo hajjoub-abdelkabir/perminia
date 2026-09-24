@@ -1,0 +1,29 @@
+name: Showcase checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  showcase:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check public source boundary
+        run: python scripts/prepare_public_release.py --check
+      - name: Frontend logic tests
+        run: |
+          npm ci --prefix student/frontend
+          npm test --prefix student/frontend
+      - name: Fresh database, migrations, compiled UI and synthetic fixtures
+        run: python scripts/showcase.py start
+      - name: Authentication, isolation, training and mocked AI tests
+        run: python scripts/showcase.py test
+      - name: Stop this project's services
+        if: always()
+        run: python scripts/showcase.py stop

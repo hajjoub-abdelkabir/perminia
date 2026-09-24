@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <style>
+      .contour { fill: none; stroke: #0A5D7A; stroke-opacity: 0.05; stroke-width: 1.5; }
+      .contour-highlight { fill: none; stroke: #F5A623; stroke-opacity: 0.08; stroke-width: 2; stroke-dasharray: 8 6; }
+    </style>
+  </defs>
+  <path d="M0,150 Q300,100 600,220 T1200,180" class="contour"/>
+  <path d="M0,250 Q350,180 700,320 T1200,280" class="contour"/>
+  <path d="M0,350 Q400,260 800,420 T1200,380" class="contour-highlight"/>
+  <path d="M0,450 Q450,340 900,520 T1200,480" class="contour"/>
+  <path d="M0,550 Q500,420 1000,620 T1200,580" class="contour"/>
+</svg>

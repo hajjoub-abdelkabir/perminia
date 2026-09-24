@@ -1,0 +1,13 @@
+**
+!student/
+!student/backend/
+!student/backend/**
+!student/frontend/
+!student/frontend/**
+**/node_modules
+**/dist
+**/__pycache__
+**/.pytest_cache
+**/.venv
+**/.env*
+**/*.log

@@ -1,0 +1,95 @@
+name: perminia-showcase
+
+x-owner: &owner
+  POSTGRES_HOST: db
+  POSTGRES_DB: perminia_showcase
+  POSTGRES_USER: sya9a
+  POSTGRES_PASSWORD: ${SHOWCASE_DB_PASSWORD:?Use python scripts/showcase.py start}
+  RUNTIME_DB_PASSWORD: ${SHOWCASE_RUNTIME_PASSWORD:?Use python scripts/showcase.py start}
+
+x-app: &app
+  image: perminia-showcase:local
+  build:
+    context: .
+    dockerfile: Dockerfile.showcase
+  environment: *owner
+
+services:
+  db:
+    image: postgres:17.11-bookworm@sha256:051f7b7b3abdd564d5d1bd1e8c4b9c1b6e77087d1dd22020ede611c096a272e0
+    environment:
+      POSTGRES_USER: sya9a
+      POSTGRES_DB: perminia_showcase
+      POSTGRES_PASSWORD: ${SHOWCASE_DB_PASSWORD:?Use python scripts/showcase.py start}
+    volumes: [showcase_db:/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U sya9a -d perminia_showcase"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+
+  migrate:
+    <<: *app
+    command: [alembic, upgrade, head]
+    depends_on:
+      db: {condition: service_healthy}
+
+  configure-runtime:
+    <<: *app
+    command: [python, configure_runtime.py]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+
+  seed:
+    <<: *app
+    user: "0:0"
+    environment:
+      <<: *owner
+      PERMINIA_SYNTHETIC_SHOWCASE: "true"
+    command: [python, seed_showcase.py]
+    volumes:
+      - showcase_content:/content
+      - ./data/showcase:/showcase
+    depends_on:
+      configure-runtime: {condition: service_completed_successfully}
+
+  api:
+    <<: *app
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_DB: perminia_showcase
+      POSTGRES_USER: sya9a_student_runtime
+      POSTGRES_PASSWORD: ${SHOWCASE_RUNTIME_PASSWORD:?Use python scripts/showcase.py start}
+      STUDENT_PREVIEW_ENABLED: "true"
+      STUDENT_COOKIE_SECURE: "false"
+      STUDENT_ALLOWED_ORIGINS: "http://localhost:${SHOWCASE_PORT:-5184},http://127.0.0.1:${SHOWCASE_PORT:-5184}"
+      STUDENT_AI_ENABLED: "false"
+      CHAT_ENABLED: "false"
+      CHAT_ALLOW_DRAFT: "false"
+      PERMINIA_WEB_ROOT: /web
+    ports: ["127.0.0.1:${SHOWCASE_PORT:-5184}:8000"]
+    volumes: [showcase_content:/content:ro]
+    depends_on:
+      seed: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health/ready', timeout=3)"]
+      interval: 3s
+      timeout: 4s
+      retries: 30
+    restart: unless-stopped
+
+  tests:
+    <<: *app
+    profiles: [tools]
+    environment:
+      <<: *owner
+      STUDENT_ALLOWED_ORIGINS: "http://localhost:5174"
+      CHAT_ENABLED: "false"
+    command: [python, -m, unittest, discover, -s, tests, -p, test_showcase.py, -v]
+    depends_on:
+      configure-runtime: {condition: service_completed_successfully}
+
+volumes:
+  showcase_db:
+  showcase_content:

@@ -1,0 +1,875 @@
+{
+  "kind": "synthetic-technical-MVP",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 174,
+      "sha256": "7a4761ae84e2b56200062d1f8f890f36f8952b2ad86c20e316c125185957c720"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 494,
+      "sha256": "abeae59241e883b53845b61a3e6c138617b4da64728b9c8d6f83a072161f67a4"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 945,
+      "sha256": "a3872875277b76225b211e568e8958e3663551d3b2a1d91c25e2dd9495c1eef6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 298,
+      "sha256": "fece3527d2f2481f17ceb933a5c7fff73cbda8b4a31e8182e19b78d1d0659365"
+    },
+    {
+      "path": "compose.showcase.yaml",
+      "bytes": 2847,
+      "sha256": "a612d0ec886cba9d5d416c34ed2c1b9f854ad96fe7a19cb715a5814d6e24572c"
+    },
+    {
+      "path": "Dockerfile.showcase",
+      "bytes": 841,
+      "sha256": "c61f0aa2b13a03e6be880dc2932fe229893177cc2db82eb643225e895d4c87ac"
+    },
+    {
+      "path": "docs/public/LINKEDIN_DRAFT.md",
+      "bytes": 2685,
+      "sha256": "c66fa136cc3c155ac8e2341b5f0bef378688ab58534431d74a7c963ce38a78d5"
+    },
+    {
+      "path": "docs/public/SHOWCASE.md",
+      "bytes": 3632,
+      "sha256": "67a35cf77a48a8cfa14a68166e235e873204b82fef8bd2f9689b5fe596b52165"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8126,
+      "sha256": "3816d8f46f54a2c26d48e2c2e3ba82c9c79faa8aa7e39b4dbc117feecffac94c"
+    },
+    {
+      "path": "scripts/prepare_public_release.py",
+      "bytes": 4926,
+      "sha256": "217b6fad646f6f991ebf99b06456e5f8cbf90806276b6b0fa79c4dfb8870a384"
+    },
+    {
+      "path": "scripts/showcase.py",
+      "bytes": 2112,
+      "sha256": "fb48c24ac9a40dc527e59520f4fb27198fc78cb2ad0c54afce018b68e7942376"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1641,
+      "sha256": "73ba081b6242f0c9cfae0fe9a19474af8d7c0f12bef9d6c32630c6b8534ea970"
+    },
+    {
+      "path": "student/backend/.dockerignore",
+      "bytes": 37,
+      "sha256": "361c547d261564fc8da3eabffc1b7ec98c5fb224dce1932c50314e91dc6a582e"
+    },
+    {
+      "path": "student/backend/alembic.ini",
+      "bytes": 60,
+      "sha256": "ebfad8a9c8f352d2381e48df599dd04dad764ca95b03f0dc9949d0691c6d2517"
+    },
+    {
+      "path": "student/backend/app/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "student/backend/app/auth.py",
+      "bytes": 11175,
+      "sha256": "1c0a43975c60bfd8590f4c8ffd57983d67900f13cfb4090aea92e557ad44e10f"
+    },
+    {
+      "path": "student/backend/app/chat.py",
+      "bytes": 14862,
+      "sha256": "a13bf407444725b29b0257048d5175936274c07dab5da0b4d136786d5ca61976"
+    },
+    {
+      "path": "student/backend/app/chat_provider.py",
+      "bytes": 3571,
+      "sha256": "cf7042e868b84ff7dfe33f77fc4aec04e62bb00fb96fa95bf696a47452dfecce"
+    },
+    {
+      "path": "student/backend/app/coach.py",
+      "bytes": 6096,
+      "sha256": "31433d23b675c6cd7225967cface942ed7eba9b10ef344974701e1f031a2e0a5"
+    },
+    {
+      "path": "student/backend/app/daily_plan.py",
+      "bytes": 2342,
+      "sha256": "914653dc9c739e722efca12c91e9c9f7b1e25c1e3fc73ff908ccbe04cd29e8c7"
+    },
+    {
+      "path": "student/backend/app/db.py",
+      "bytes": 482,
+      "sha256": "4e36fa4aea34c8f72a8da4511a7bb130125e174ef35eae56a1c6a9bf687196f6"
+    },
+    {
+      "path": "student/backend/app/journey.py",
+      "bytes": 9704,
+      "sha256": "d97773e2cbc1a7d4923cef8d06ef9dbff7678667d0ca12f2d3bf130b28b42e17"
+    },
+    {
+      "path": "student/backend/app/lessons.py",
+      "bytes": 5872,
+      "sha256": "5a2fbfc997bc7b0931b8e0f862b213506913df41dfffb14a072ec0597c1f5784"
+    },
+    {
+      "path": "student/backend/app/main.py",
+      "bytes": 3052,
+      "sha256": "59963baa985275c4be60bad1bf5e3b25c3db5e703106bcf5440e1326a0873993"
+    },
+    {
+      "path": "student/backend/app/mastery.py",
+      "bytes": 3130,
+      "sha256": "98be15ba1bc32718459b251dd2fac3d8c89886b3b8119170425c16f2ebf57713"
+    },
+    {
+      "path": "student/backend/app/notebook.py",
+      "bytes": 7815,
+      "sha256": "0933bca12af6d77e656f9e64f54cf0a72843168122534cbff2133bd12ff3ca7f"
+    },
+    {
+      "path": "student/backend/app/school.py",
+      "bytes": 5083,
+      "sha256": "f0583eb08d05eb032887da1ca828a90ad1a9a6914c4c4d7295e3c0963b70ed55"
+    },
+    {
+      "path": "student/backend/app/student.py",
+      "bytes": 2751,
+      "sha256": "614a5a92889fe24f53d29f551292cd6704bc307d3a7eafedbfb8d42ff256a9ad"
+    },
+    {
+      "path": "student/backend/app/training.py",
+      "bytes": 12594,
+      "sha256": "052620f50572a3c858777e76aadb3b4ed523834d79e9099879dcc9c16fe97778"
+    },
+    {
+      "path": "student/backend/audio_metadata.py",
+      "bytes": 436,
+      "sha256": "e9289a369e645c398ef2f19a63c8e04ed6be9dca9578a2246ba8e4f40bf7f8a9"
+    },
+    {
+      "path": "student/backend/audio_report.py",
+      "bytes": 1709,
+      "sha256": "7cca1a9b9c14b7142529f1c6e9733fc989004ab65147322a25b7fe4aa9001967"
+    },
+    {
+      "path": "student/backend/backup_media.py",
+      "bytes": 4102,
+      "sha256": "1426290ce32d48b3d05e1c7b36b04d77973814393e8de43b5911c93f02407652"
+    },
+    {
+      "path": "student/backend/build_training_editorial.py",
+      "bytes": 11972,
+      "sha256": "31174c9896fe19142bf7ac03fc0248212dc02b3274cacfd5c6d84840fedbeab5"
+    },
+    {
+      "path": "student/backend/chat_preflight.py",
+      "bytes": 1428,
+      "sha256": "75f64bcc3e909005eecdf960ad24cca30f2ded4d7b15f81cf509455e5fadddf5"
+    },
+    {
+      "path": "student/backend/configure_runtime.py",
+      "bytes": 366,
+      "sha256": "72c18244d5b5f3d5404ab1e595aed791562c781aa5d55bf8de8d061064febc3b"
+    },
+    {
+      "path": "student/backend/content_review.py",
+      "bytes": 8241,
+      "sha256": "b612690710e8998a876ff3ef1b54fbe534b9b25c75a0c8d868aa5d59e560e50e"
+    },
+    {
+      "path": "student/backend/database_report.py",
+      "bytes": 2910,
+      "sha256": "b507e92b19ed7e5d71c9159cf193129bcdc6407608c28ba0276c1aadded95f75"
+    },
+    {
+      "path": "student/backend/Dockerfile",
+      "bytes": 490,
+      "sha256": "1d03168c1089df49efdfdeda8b9fe0c68b77af793e659aa344cfa357f8fc38f0"
+    },
+    {
+      "path": "student/backend/editorial_workbench.html",
+      "bytes": 13602,
+      "sha256": "89a1b55196aba12b977309dc9688d04a1a341bb91413b84841a348f73c95c856"
+    },
+    {
+      "path": "student/backend/import_courses.py",
+      "bytes": 6541,
+      "sha256": "3aaae9b823ada39063330ce694fefd710ae537a9d7daa2ca250a276d765d5ccf"
+    },
+    {
+      "path": "student/backend/import_dataset.py",
+      "bytes": 12155,
+      "sha256": "d6f2c0f6a2f2567a9ae0ad15f186887da2204b920256250298850a4f5028391a"
+    },
+    {
+      "path": "student/backend/import_lesson_media.py",
+      "bytes": 6900,
+      "sha256": "e2a1466c1448894a6bfd214cfc2372f13f724eca64308859d5f4c31854a24c43"
+    },
+    {
+      "path": "student/backend/import_lesson_media_v2.py",
+      "bytes": 1759,
+      "sha256": "d7a55a4007a72a734c0778068c6985af7ff5ed882911853934c140162ea461e1"
+    },
+    {
+      "path": "student/backend/migrations/env.py",
+      "bytes": 230,
+      "sha256": "50440d21fabb32fab986b1a04d590da7ff94c0c45b5042059131e8d66e214e62"
+    },
+    {
+      "path": "student/backend/migrations/versions/0001_bootstrap.py",
+      "bytes": 743,
+      "sha256": "ddb9e3bfb6b51568ba31926029a7c723ecc68fc494e07595f881f64512f0cc54"
+    },
+    {
+      "path": "student/backend/migrations/versions/0002_content.py",
+      "bytes": 591,
+      "sha256": "fa0fbf30300149c67b5fc18cb0f5237ec211b03c03c59e4a505418a8c471136b"
+    },
+    {
+      "path": "student/backend/migrations/versions/0003_asset_versions.py",
+      "bytes": 1250,
+      "sha256": "f15c512fa1235ec4069832b7527559cca9a69c4bff3d15f68c84b200b5b48a27"
+    },
+    {
+      "path": "student/backend/migrations/versions/0004_audio_metadata.py",
+      "bytes": 1012,
+      "sha256": "10376251b18547335692d33a76978219220777fe400fa759f747664c82bc27f8"
+    },
+    {
+      "path": "student/backend/migrations/versions/0005_student_preview.py",
+      "bytes": 2339,
+      "sha256": "c2cd06497ad1c49a5bd42f415b257e57b9d1dd58b7f7167120f60117d8f28ccd"
+    },
+    {
+      "path": "student/backend/migrations/versions/0006_student_accounts.py",
+      "bytes": 617,
+      "sha256": "f61aea736d9f3f32a478961ed29cd12984c570e36fa15a7b3b9d668d498ebe91"
+    },
+    {
+      "path": "student/backend/migrations/versions/0007_school_invites.py",
+      "bytes": 625,
+      "sha256": "c8d15a1da458dc734144c8efca55dec04544bbb67aed3eb3b2bf4e4609521fad"
+    },
+    {
+      "path": "student/backend/migrations/versions/0008_lessons.py",
+      "bytes": 537,
+      "sha256": "40bc948b8f833c824ef14003ad53ba4ebb41a8bcf2acf7e36f23eee5484a9be0"
+    },
+    {
+      "path": "student/backend/migrations/versions/0009_lesson_media.py",
+      "bytes": 507,
+      "sha256": "34f50a3a98688d619a4937be10e81196480da94c4ccb340fe8161a82013bdf07"
+    },
+    {
+      "path": "student/backend/migrations/versions/0010_student_journey.py",
+      "bytes": 535,
+      "sha256": "763146c5401e6b0ef2ccbe82e288b757b54ceb78f1142ed4310edb1cd68884d2"
+    },
+    {
+      "path": "student/backend/migrations/versions/0011_journey_history.py",
+      "bytes": 525,
+      "sha256": "2cdfaa7229bf972851a92687c2ceb8f0cc52d530e5f5db0daef1eff17fbb1be6"
+    },
+    {
+      "path": "student/backend/migrations/versions/0012_training.py",
+      "bytes": 513,
+      "sha256": "3dcb22a379061ed5e33bc7af2d8ad6a3db76decb264af4523cf5ababb03d5e20"
+    },
+    {
+      "path": "student/backend/migrations/versions/0013_notebook.py",
+      "bytes": 429,
+      "sha256": "c239087c3b2675af88b2ef2d2cfeb0d3c6c246af95005e5463d425c0a602d6dd"
+    },
+    {
+      "path": "student/backend/migrations/versions/0014_school_mvp.py",
+      "bytes": 454,
+      "sha256": "fe62a501fc23669bb740542d8f7f74b0bf147ff28dc767112f2c16f456731647"
+    },
+    {
+      "path": "student/backend/migrations/versions/0015_account_recovery.py",
+      "bytes": 458,
+      "sha256": "ac39fb4c3ae45c4b85c98f6aa2a1066cb55ae9d3812ed684582f69cdeadc7b31"
+    },
+    {
+      "path": "student/backend/migrations/versions/0016_chat.py",
+      "bytes": 437,
+      "sha256": "65081b03e82bdf31fc3661adcdf7f9db3e385fcba0c14e6a1ad7fcc60a801735"
+    },
+    {
+      "path": "student/backend/prepare_training_review.py",
+      "bytes": 5215,
+      "sha256": "ce30f4ae765b005a1349e069b57e851579543e9a26c0fa7e69febb20e77ee89e"
+    },
+    {
+      "path": "student/backend/provision_school.py",
+      "bytes": 6890,
+      "sha256": "9ab266df08df29cc17a141013cfc21094c75b1f4053c01cc2844c9aa3838c913"
+    },
+    {
+      "path": "student/backend/requirements.lock",
+      "bytes": 389,
+      "sha256": "af1eecad94da181cfc3323535b5561cc2f2e2a69d81c83dc670f5b9e797444f8"
+    },
+    {
+      "path": "student/backend/requirements.txt",
+      "bytes": 108,
+      "sha256": "d29bbf9f1c0f1486c7e0c83d876856a256be2e383923c2607608efc468b13d6b"
+    },
+    {
+      "path": "student/backend/schema/0002_content.sql",
+      "bytes": 40658,
+      "sha256": "9f806e5ac236a6a43c23a520567fedb36afce588b75a327526e6fb9ef9aaccf6"
+    },
+    {
+      "path": "student/backend/schema/0006_student_accounts.sql",
+      "bytes": 5494,
+      "sha256": "171cdb1e83f3cc02335711e83f962e994a8ac8ac501bc36867c992900f070bed"
+    },
+    {
+      "path": "student/backend/schema/0007_school_invites.sql",
+      "bytes": 4978,
+      "sha256": "7dcf57568ed34e2199d3853ea6ab6d3e4de80ab5b87c6efa3e84e88a772199a9"
+    },
+    {
+      "path": "student/backend/schema/0008_lessons.sql",
+      "bytes": 4454,
+      "sha256": "aa7860ca9481be442082509a6140f4e60f73268bbb3ceff037d43ec1f3ed323c"
+    },
+    {
+      "path": "student/backend/schema/0009_lesson_media.sql",
+      "bytes": 971,
+      "sha256": "0d57311f4617437a62de449f9683ba644f804ed394cc47348ec4e75558ef16fc"
+    },
+    {
+      "path": "student/backend/schema/0010_student_journey.sql",
+      "bytes": 3463,
+      "sha256": "e3606f9e32746b33d8dcd1843c8e0021eb3879f63fbf1fd86645a9139001f6fb"
+    },
+    {
+      "path": "student/backend/schema/0011_journey_history.sql",
+      "bytes": 2659,
+      "sha256": "48c90480004d1c7599f6482e5d893f27370cd2530d57d902fd5ac522a2e5ece6"
+    },
+    {
+      "path": "student/backend/schema/0012_training.sql",
+      "bytes": 7355,
+      "sha256": "676e40b4789c6612768cc3bee9faffa489dd16ba3f824b8f275a84526f908d34"
+    },
+    {
+      "path": "student/backend/schema/0013_notebook.sql",
+      "bytes": 2648,
+      "sha256": "4073ea80491a1b5964483e10417baafc7353f6a97f3b73d26d9f0103efc173e2"
+    },
+    {
+      "path": "student/backend/schema/0014_school_mvp.sql",
+      "bytes": 16892,
+      "sha256": "f25ab5d29ff26593ec872b49b9cb2a827e460446ebc9d7ced36c368dfefff194"
+    },
+    {
+      "path": "student/backend/schema/0015_account_recovery.sql",
+      "bytes": 9097,
+      "sha256": "005cb76c92194ad77b7097ae2b46137f553e135f98b8cf8bc1aab31097636c95"
+    },
+    {
+      "path": "student/backend/schema/0016_chat.sql",
+      "bytes": 3789,
+      "sha256": "2dde2e8ca29200a42e9cbbd2cbb54ad44d8af350ac6d492871d3511c2c5ec6ee"
+    },
+    {
+      "path": "student/backend/schema_diagram.py",
+      "bytes": 1545,
+      "sha256": "d1e3b05dc6229cebbf7fce31263aaa6b7ebdef127cd7ca36afc1bedb065982ec"
+    },
+    {
+      "path": "student/backend/seed_demo.py",
+      "bytes": 6266,
+      "sha256": "cd55dfe64be54ec498cedea46706636558d3f6ba8964276cdb1351c0fa5a82a3"
+    },
+    {
+      "path": "student/backend/seed_journey.py",
+      "bytes": 3045,
+      "sha256": "4fdd8eab9fee12f79b2b3a909b36881ecdba507c23e3fff17490c15f8bb2364c"
+    },
+    {
+      "path": "student/backend/seed_school_links.py",
+      "bytes": 1795,
+      "sha256": "25a0068e30d867a98fdb3e83facbd88a9e61279671f06e700447561fd48c4964"
+    },
+    {
+      "path": "student/backend/seed_showcase.py",
+      "bytes": 12187,
+      "sha256": "9f4cfb5200ab9add78d8e6a3287319f6bae758fd8a7b9f362714d6e975e39872"
+    },
+    {
+      "path": "student/backend/smoke.py",
+      "bytes": 697,
+      "sha256": "6fdd6967fc1784bbd13f95bf84e79ca9eaecab6c2d7dbbf21d1a0607613205d6"
+    },
+    {
+      "path": "student/backend/stage_training_editorial.py",
+      "bytes": 5839,
+      "sha256": "c69bd209f03ed8d7c1d7aed21761bbea9afc8f9a746742567710369fb5c22513"
+    },
+    {
+      "path": "student/backend/tests/check_journey.py",
+      "bytes": 2818,
+      "sha256": "f511ace44f7e57b5e1c65488ee8f6e6a89910830f9a0c3bd5dded8aa17472147"
+    },
+    {
+      "path": "student/backend/tests/check_lesson_media.py",
+      "bytes": 2046,
+      "sha256": "4f9c4998d4d41e23a7ff4a6575acb18b6144f36567b4140c5044419bf56b6c42"
+    },
+    {
+      "path": "student/backend/tests/test_accounts.py",
+      "bytes": 10831,
+      "sha256": "368923a596d08d67eec5c0a39dbd90c41a4e858d6986e76d0b1f05241ddc1c2b"
+    },
+    {
+      "path": "student/backend/tests/test_backup.py",
+      "bytes": 2711,
+      "sha256": "e236dd156bb155318f5c069fdfce33e1be9420f9a88d71303bc02b6c130cbded"
+    },
+    {
+      "path": "student/backend/tests/test_chat.py",
+      "bytes": 11216,
+      "sha256": "ec464db7bb037aec7bda9a79202fea121cddad0b25391695caf9d42af097c49b"
+    },
+    {
+      "path": "student/backend/tests/test_content_review.py",
+      "bytes": 3726,
+      "sha256": "f2ee3f01a6cacf61c39837eb21e31942d3f664fa407a70b53d5a5dfe8878d28b"
+    },
+    {
+      "path": "student/backend/tests/test_daily_plan.py",
+      "bytes": 3211,
+      "sha256": "3d6f285da0c0a70bfde0e19ef5bbd806b6938240ca990948344f3a90222ebb55"
+    },
+    {
+      "path": "student/backend/tests/test_database.py",
+      "bytes": 13263,
+      "sha256": "b8f38092ec70f35e2bb2bce2df9981f19e912c03bf3ec45743faaec85a24bd7d"
+    },
+    {
+      "path": "student/backend/tests/test_journey.py",
+      "bytes": 5794,
+      "sha256": "c2ad57c6efba40fe11c84ecdbbbbaca831d847ba1ed3497b9634de7e3f6f57ee"
+    },
+    {
+      "path": "student/backend/tests/test_lessons.py",
+      "bytes": 4127,
+      "sha256": "2ee63c8d1c6f91c3fbdd0e49896d9c8ffa7d55beaefb34737b06f8f81e9e82df"
+    },
+    {
+      "path": "student/backend/tests/test_notebook.py",
+      "bytes": 4682,
+      "sha256": "97423ffb3a0a025b6f2303efa1aa6562aded4824e9b12a8c52244de40d0886fa"
+    },
+    {
+      "path": "student/backend/tests/test_recovery.py",
+      "bytes": 7601,
+      "sha256": "3b77aca6a480b04de092a8112dd7fadbc4fdd37c01740ea41791dece9b93b5f1"
+    },
+    {
+      "path": "student/backend/tests/test_school.py",
+      "bytes": 8451,
+      "sha256": "4efef758f8984f5197b18785923bc6338721794bc2c5875730484552186c20a0"
+    },
+    {
+      "path": "student/backend/tests/test_schools.py",
+      "bytes": 6676,
+      "sha256": "ebf6471406e58e7626bfd3e57b11f228946323bf92f4d515694725e5fb5b5f97"
+    },
+    {
+      "path": "student/backend/tests/test_showcase.py",
+      "bytes": 4513,
+      "sha256": "aab14f109a55a45cff00fa5544fd7a0a4795f236bee429d32833801c78ba2d5c"
+    },
+    {
+      "path": "student/backend/tests/test_student_preview.py",
+      "bytes": 3687,
+      "sha256": "1f4d71c71b01186ea96c78463fa884e4c02b97fed3e93b6b49e74f2635fd6ee7"
+    },
+    {
+      "path": "student/backend/tests/test_training.py",
+      "bytes": 8580,
+      "sha256": "af3bb194c1cb23b197897504300425731065e0d51dcc991334ea92200dfab76e"
+    },
+    {
+      "path": "student/backend/tests/test_training_editorial.py",
+      "bytes": 7211,
+      "sha256": "da7d01df5028583152c552f4990b6297027d2ce011cd6e6ea1d1f9bbf310afb2"
+    },
+    {
+      "path": "student/backend/tests/training_fixture.py",
+      "bytes": 4324,
+      "sha256": "43a39daa0a6d51743cde9572ce56629a061e3c14d917b3b8e51bbe96abf6f3ce"
+    },
+    {
+      "path": "student/frontend/.dockerignore",
+      "bytes": 23,
+      "sha256": "51b683467baace87247effed923b8aaecc559168ba0efbb43fd4714a8dc19362"
+    },
+    {
+      "path": "student/frontend/Dockerfile",
+      "bytes": 268,
+      "sha256": "5cf26129d5308352f28b078f342d9f209362871d287b27a800304e5a0d86a577"
+    },
+    {
+      "path": "student/frontend/index.html",
+      "bytes": 486,
+      "sha256": "dfd013fb855ef2e0984c2eb66200003be1e02d0a5e14c2bec6797956a5a4074c"
+    },
+    {
+      "path": "student/frontend/package-lock.json",
+      "bytes": 27448,
+      "sha256": "937265bb6dcf3057737519ad669f6ee066b963ac4334da27ff2b5ea3374c7563"
+    },
+    {
+      "path": "student/frontend/package.json",
+      "bytes": 387,
+      "sha256": "fec764dbf3abeae110032e53dfc3049826ac8ed63f746622bcdb522ee7eb1e1b"
+    },
+    {
+      "path": "student/frontend/public/brand/perminia-icon.png",
+      "bytes": 102749,
+      "sha256": "bd11343856ba32cc76c21090bd2845539decd7e09692c2e1bd4f6f975d89d01c"
+    },
+    {
+      "path": "student/frontend/public/brand/perminia-icon.svg",
+      "bytes": 9185,
+      "sha256": "25d501aed4dcfad0df2f40f23aee16525cdd919dffa9119b8389ff4201e558f1"
+    },
+    {
+      "path": "student/frontend/public/brand/perminia-logo-white.png",
+      "bytes": 60165,
+      "sha256": "b85ddf0669992a79cac9ea0315e0c222ec4b6a7f0fc5b2696a9ed33087d4941a"
+    },
+    {
+      "path": "student/frontend/public/brand/perminia-logo-white.svg",
+      "bytes": 8963,
+      "sha256": "1bb1b7cabacf10da2ceb340fd63fbb3607d23959383984fbcf7b967b4faa7aa1"
+    },
+    {
+      "path": "student/frontend/public/brand/perminia-logo.png",
+      "bytes": 109785,
+      "sha256": "25c089d5887e69dad96672b4b90b800006311eb4a5a420a950a6c187c516549c"
+    },
+    {
+      "path": "student/frontend/public/brand/perminia-logo.svg",
+      "bytes": 9257,
+      "sha256": "c8eb97f2c41b1f13a41384b9b44e73fdf8506d03b2dfc4e95902ed738638e486"
+    },
+    {
+      "path": "student/frontend/public/visual/achievements/badge-first-step.svg",
+      "bytes": 1047,
+      "sha256": "7116fb8ebab1cd51293135248430f95f2ee6dd653f6a0caae39e5017049d9b55"
+    },
+    {
+      "path": "student/frontend/public/visual/ATTRIBUTION.md",
+      "bytes": 4827,
+      "sha256": "b3d435448fa44a1605a55a555203d605a4a4970514fdc876699565dd2ef55fd6"
+    },
+    {
+      "path": "student/frontend/public/visual/backgrounds/bg-contour-routes.svg",
+      "bytes": 680,
+      "sha256": "fe8a25c5a9b4cdf759e05e635f2bf4b6aac1ae7b3da5fe7855da538e96094616"
+    },
+    {
+      "path": "student/frontend/public/visual/backgrounds/bg-dots-grid.svg",
+      "bytes": 347,
+      "sha256": "9ffb21fed55c26d407dce14f59cce43024ab9045f8bf8921ff99df7686e0a7c0"
+    },
+    {
+      "path": "student/frontend/public/visual/credits.txt",
+      "bytes": 494,
+      "sha256": "6760349b54748d77e48354bc4ef238fdc6bda80a7f0a13557aa0697a670d0652"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-driver-state.svg",
+      "bytes": 527,
+      "sha256": "8550a15a86276115a1cca345bbf37d03cb00f170e4dd8684f1564b038384edef"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-highway.svg",
+      "bytes": 475,
+      "sha256": "8c2e2b3b0b8287ee00a889e71f19c4748e7ed1238b13344c04c4d24a2ac0db2f"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-license.svg",
+      "bytes": 499,
+      "sha256": "21e35e2c8bd6d3a29160cc5c1cee5f287700bbc796a2885820cb8c18be07e6d0"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-lighting.svg",
+      "bytes": 705,
+      "sha256": "7686a916a76fa170afc20c9179eb37fc443f61af6924e3919345edbff3a5668e"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-mechanics.svg",
+      "bytes": 454,
+      "sha256": "30c07dfa86a057d2d28d6c6bce4803f7715aa420468bd9a7254c6ef1fe9f6d95"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-overtaking.svg",
+      "bytes": 404,
+      "sha256": "8fc052a5d8e1c50bf42bb426f5cb4f703ead1d984b0329ec47f25033df9556da"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-parking.svg",
+      "bytes": 525,
+      "sha256": "10f81a7dd0844d6fc6b95b95080df7fa129a7d56481d5bb753d35c13dfc2b44d"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-priority.svg",
+      "bytes": 594,
+      "sha256": "0b2a7b4c123f072f34cf0f1913ea8b6de37fc807ef94c1b76b9731e31477504d"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-safety.svg",
+      "bytes": 555,
+      "sha256": "b33b775539ca4c1f98d5f6b8c207d7ffde9be279bb4c5f8a55373983cfbca1d6"
+    },
+    {
+      "path": "student/frontend/public/visual/icons/icon-speed.svg",
+      "bytes": 521,
+      "sha256": "0bc357120e18f0f402fada462e58abec729bd39e5649d77fdbaa2b5efe2c1d33"
+    },
+    {
+      "path": "student/frontend/public/visual/licenses/Apache-2.0.txt",
+      "bytes": 597,
+      "sha256": "08e03d29744af06235142bb3acd5abd9fe7cf45eaa3cb11c81bbdd7103adf363"
+    },
+    {
+      "path": "student/frontend/public/visual/licenses/CC-BY-4.0.txt",
+      "bytes": 534,
+      "sha256": "5643b861291bf00ae7641cab209ea3bb29fe20b434bc0167e0d03c11da6fd5ef"
+    },
+    {
+      "path": "student/frontend/public/visual/licenses/CC-BY-SA-3.0.txt",
+      "bytes": 533,
+      "sha256": "616e811c8553ba74dfb8dd47ffe97d900ec3649594acecc044bfe8f1d3ba8627"
+    },
+    {
+      "path": "student/frontend/public/visual/licenses/CC0-1.0.txt",
+      "bytes": 417,
+      "sha256": "7e27ddab3c28330c59eb59f7bac8159f6def6f25ff9ed1d34e657e58f0e1ead0"
+    },
+    {
+      "path": "student/frontend/public/visual/licenses/ISC.txt",
+      "bytes": 744,
+      "sha256": "fe2afffcec6803054a82239953ddede382d31443ac574e7c3ccc67106a89795d"
+    },
+    {
+      "path": "student/frontend/public/visual/licenses/MIT.txt",
+      "bytes": 1035,
+      "sha256": "1847e0e0698142ed4347c1441a9fa81c8fbddd44b1d8bbcd5e3647f991759d7f"
+    },
+    {
+      "path": "student/frontend/public/visual/manifest.json",
+      "bytes": 18371,
+      "sha256": "17d7e26e04e6576d504f50307cb14a8f07f5223487c5edeeb561afa090762be2"
+    },
+    {
+      "path": "student/frontend/public/visual/previews/anim-car-driving-preview.svg",
+      "bytes": 611,
+      "sha256": "3bf347a0df3e2b54ef5c982d81bbec4686789881a60f2eee8eefbb15b0520c15"
+    },
+    {
+      "path": "student/frontend/src/Account.jsx",
+      "bytes": 8989,
+      "sha256": "354c61dc0d41653fbe7c3764a3d55edfc2fdff8bca18e80bfeb8238a9b190ee6"
+    },
+    {
+      "path": "student/frontend/src/AccountSupport.jsx",
+      "bytes": 4906,
+      "sha256": "34db3bd888a93572ad83e7aeae15a3ec79fc04c4a4cc60f1139c892ab62646ed"
+    },
+    {
+      "path": "student/frontend/src/chat.css",
+      "bytes": 4854,
+      "sha256": "d42a4a31feb15d3824165103e4e65df85a291c3f0cfbc4ec30e4c1c1a68f0ac0"
+    },
+    {
+      "path": "student/frontend/src/ChatTutor.jsx",
+      "bytes": 9595,
+      "sha256": "bf2313fb2b239f03ae37b435a697a9740e949a7d7a54681dc3891b7c9f64ad34"
+    },
+    {
+      "path": "student/frontend/src/concept-scenes.css",
+      "bytes": 4641,
+      "sha256": "dcc53f9493dc6e027cf2ce5506d2bbcd32abf654e3fec7c29f80d850c6c874ab"
+    },
+    {
+      "path": "student/frontend/src/ConceptScenes.jsx",
+      "bytes": 7494,
+      "sha256": "9fa1be787503971f928e0647865a3ea821866c5221c3cc84b7e915d3f1711995"
+    },
+    {
+      "path": "student/frontend/src/ConfirmAction.jsx",
+      "bytes": 1110,
+      "sha256": "1bd6c3c7e2e00deaabba03e33634949a3985001d83765a03951a3c230788745b"
+    },
+    {
+      "path": "student/frontend/src/daily-plan.css",
+      "bytes": 1675,
+      "sha256": "b3c9b307c576d7de85b8c4a0a7b8ba46fb701a55c6c33eae032f9397c648e91e"
+    },
+    {
+      "path": "student/frontend/src/DailyPlan.jsx",
+      "bytes": 3577,
+      "sha256": "aff4b47327bd271ca091b5f6b4481057a53dede5d0e8b24a4924e77014792b56"
+    },
+    {
+      "path": "student/frontend/src/distance-model.js",
+      "bytes": 490,
+      "sha256": "64de8a1b511df94a937aef8363d66e4258bd0e8f47ff954f2ed8a19d10f306f3"
+    },
+    {
+      "path": "student/frontend/src/distance-model.test.js",
+      "bytes": 869,
+      "sha256": "04185431ad4611469cdf532e86ba882703487edb7039326c51b41cb5b90dfb83"
+    },
+    {
+      "path": "student/frontend/src/journey-api.js",
+      "bytes": 815,
+      "sha256": "68f7cd14c0c8f284539c04ac6dc1f10d25cd5821b86ea2cf40db7d8113de8cf2"
+    },
+    {
+      "path": "student/frontend/src/journey.css",
+      "bytes": 17873,
+      "sha256": "13933e405c4bb1cfea28dd9595f1956560dff3cd92533df5b7bb3b2a1cfde142"
+    },
+    {
+      "path": "student/frontend/src/LearningJourney.jsx",
+      "bytes": 13087,
+      "sha256": "0d56d741fc83d5019a39533ae3be2ffb09f3b77bfb353fa937d13c200d6b4890"
+    },
+    {
+      "path": "student/frontend/src/lesson-stage.css",
+      "bytes": 5335,
+      "sha256": "6950ef6e9f93b7ab09992c4b956200225094328d84cface0f7938b0907b471d2"
+    },
+    {
+      "path": "student/frontend/src/Lessons.jsx",
+      "bytes": 7334,
+      "sha256": "81cc837715bf454ddb6f9e98936fb7e7b58c8b6141043884b7165db946d15af1"
+    },
+    {
+      "path": "student/frontend/src/LessonStage.jsx",
+      "bytes": 6986,
+      "sha256": "aff58a030da7d8d33c720e043228b335a3ae405750dd06bcc4d91671d590d74a"
+    },
+    {
+      "path": "student/frontend/src/main.jsx",
+      "bytes": 12956,
+      "sha256": "a6bb06446b3e74680d5cdf7396a66e85c2ecb87e39a2d80feb265700ddf83aab"
+    },
+    {
+      "path": "student/frontend/src/navigation.js",
+      "bytes": 2138,
+      "sha256": "20af249ee8cbb7894f5540f281d2dcbf93dc7328a16bb60124ee3049ad68310b"
+    },
+    {
+      "path": "student/frontend/src/navigation.test.js",
+      "bytes": 2136,
+      "sha256": "35971a930ed35a2017d277c08880bd59dfd220f2d589542880ff868490aa488b"
+    },
+    {
+      "path": "student/frontend/src/notebook.css",
+      "bytes": 2768,
+      "sha256": "a55766d4f30aa64520a38ec173f823ac75d05d9afdd83779d3663fa188c96183"
+    },
+    {
+      "path": "student/frontend/src/ReviewNotebook.jsx",
+      "bytes": 7415,
+      "sha256": "fae82eadc844484d5838c17a59ca44bbd03179c875599847451a2e8408aa935c"
+    },
+    {
+      "path": "student/frontend/src/school-api.js",
+      "bytes": 449,
+      "sha256": "1c34147214af71ca62563b3fdad2d5ec5d2f5dc3f2e1b390dd67bf7381170618"
+    },
+    {
+      "path": "student/frontend/src/school.css",
+      "bytes": 7799,
+      "sha256": "0a4ecc283591532e9cee9c0787943010d5fc49df0c4ec89d1adb91aa45e7f6bd"
+    },
+    {
+      "path": "student/frontend/src/SchoolPortal.jsx",
+      "bytes": 18395,
+      "sha256": "5964346c9cc3aaa615dc1cdfa5029dd44a7cf01049d0c14f1165d9370e342c07"
+    },
+    {
+      "path": "student/frontend/src/ShowcaseBanner.jsx",
+      "bytes": 512,
+      "sha256": "96c8adf0f91b2516108e6bf62669c28984f5f2d7da8829bfeb1e4a89b22150d0"
+    },
+    {
+      "path": "student/frontend/src/student-dashboard.css",
+      "bytes": 9516,
+      "sha256": "a1e86447c99ce4aa8dfbfdd81c42986a88c59dcb15e6d341608ba8c35c957550"
+    },
+    {
+      "path": "student/frontend/src/StudentDashboard.jsx",
+      "bytes": 14085,
+      "sha256": "3a484e24996b345c365b595a2dd66336ba03ec88f41ae7b38259027b2a6afdd6"
+    },
+    {
+      "path": "student/frontend/src/StudentProgress.jsx",
+      "bytes": 3582,
+      "sha256": "49f5fe7c1ddbfd7fe9da65cdfdddb3ab9facc0c52e18bfd1b47c1ad687c87844"
+    },
+    {
+      "path": "student/frontend/src/StudentToday.jsx",
+      "bytes": 1040,
+      "sha256": "2a885adcd1214ac8bdb03d736227fcfeb06554f17fa4ccc2072180c07fe11d63"
+    },
+    {
+      "path": "student/frontend/src/style.css",
+      "bytes": 26576,
+      "sha256": "7dfa29abba3d2d1ce28334a78158efb65615eacd34645cbafb03654d98503026"
+    },
+    {
+      "path": "student/frontend/src/TimedSession.jsx",
+      "bytes": 10627,
+      "sha256": "9f0a57c90eb9287601a9fd6c9619661b0cd82eac006c7a9c746c7a993a72f63b"
+    },
+    {
+      "path": "student/frontend/src/timing.mjs",
+      "bytes": 413,
+      "sha256": "17747c6c8598ca613b6c0cc5a007d6b46d5fd38efa87a2080e462260aa894cf0"
+    },
+    {
+      "path": "student/frontend/src/training.css",
+      "bytes": 5730,
+      "sha256": "161f3b0f8fa82f59227a51b1c8bee05234a35f63060fb266e4695baafe920760"
+    },
+    {
+      "path": "student/frontend/src/TrainingCenter.jsx",
+      "bytes": 16452,
+      "sha256": "2ef3a2a594682b0fbbd7b69cb3e5339bdfcb26d06c2e5e5ee74587a1fc0e5b1e"
+    },
+    {
+      "path": "student/frontend/timing.test.mjs",
+      "bytes": 983,
+      "sha256": "a889d26cc9e70eb42e5c9cfcd6f9d3f3a10e02e5b0c59b477bb87be10d5a508f"
+    },
+    {
+      "path": "student/frontend/vite.config.js",
+      "bytes": 358,
+      "sha256": "8e0ae3bb0d335ba9798496aac5f801f86f909ca45aabd285a3f19b822390edd7"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1449,
+      "sha256": "fddef61e54a284feb63ed29f5e72797689204d2795704828e9c520528678027e"
+    }
+  ]
+}

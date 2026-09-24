@@ -1,0 +1,8 @@
+PerminIA visual credits
+
+Tabler Icons: Copyright (c) Paweł Kuna and Tabler Icons contributors. MIT License.
+https://github.com/tabler/tabler-icons
+See licenses/MIT.txt for the included permission and warranty notice.
+
+Decorative backgrounds, car preview and first-step illustration: supplied in the user-provided PerminIA visual-assets package. Source-supplied provenance is preserved in manifest.json.
+Original interactive scenes and companion: implemented in React/CSS for PerminIA.
