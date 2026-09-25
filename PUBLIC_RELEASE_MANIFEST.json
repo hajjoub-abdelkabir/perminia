@@ -33,8 +33,8 @@
     },
     {
       "path": "docs/public/LINKEDIN_DRAFT.md",
-      "bytes": 2685,
-      "sha256": "c66fa136cc3c155ac8e2341b5f0bef378688ab58534431d74a7c963ce38a78d5"
+      "bytes": 3189,
+      "sha256": "a71bdc6839afe78ddb8b5bfc72fcdccd8f4d93c5dec941401835d1f21154fba3"
     },
     {
       "path": "docs/public/SHOWCASE.md",
@@ -43,8 +43,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9432,
-      "sha256": "5e9853ae2636d2a9939ce2c493ccaf8dc3d389bcf6bad33240ffac13cd4d4e5e"
+      "bytes": 9917,
+      "sha256": "8268e4f9afbc0c6be5d29878f92232a9bcb5bb1c02015d4986bacf2c139eb35d"
     },
     {
       "path": "scripts/check_static_demo.py",

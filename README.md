@@ -4,9 +4,11 @@
 
 A technical MVP for Moroccan driving schools: a connected learner, instructor and school-manager experience, with Arabic/RTL navigation and Moroccan Darija explanations.
 
-**Status: local, demonstrable technical MVP. Not an accredited curriculum or a production-ready commercial service.** The public showcase uses original synthetic shape/color exercises and fictional accounts. The private imported driving-question bank, audio/video collections, credentials and database backups are not distributed.
+**[Try the live interactive demo](https://perminia.vercel.app) · [CI checks](https://github.com/hajjoub-abdelkabir/perminia/actions)**
 
-## What you can try
+**Status: demonstrable technical MVP, with a live frontend presentation and a full local Docker application. Not an accredited curriculum or a production-ready commercial service.** The public showcase uses original synthetic shape/color exercises and fictional accounts. The private imported driving-question bank, audio/video collections, credentials and database backups are not distributed.
+
+## What you can try in the full local application
 
 - Sign in as a learner, instructor or school manager, with school-scoped access.
 - Read lessons progressively, save reading progress and bookmarks, and resume later.
@@ -20,6 +22,8 @@ The code also contains a Darija chat assistant with per-conversation memory, loc
 ## Quick start
 
 ### Browser-only portfolio demo (Vercel)
+
+Open **https://perminia.vercel.app**. Start as the learner, read a walkthrough and complete its task, then switch to the instructor to inspect it and assign another. The manager view illustrates student assignment. No installation or sign-in is needed.
 
 The public-demo build is a separate, self-contained presentation of the product. Switch between learner, instructor and manager without signing in. Reading, tasks and the short illustrative quiz share namespaced localStorage; reset affects only this demo. If storage is unavailable it falls back to memory. Chat responses are explicitly labelled, prewritten examples, not live AI. No real school data is requested or sent.
 
