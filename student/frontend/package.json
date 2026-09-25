@@ -3,7 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "scripts": {"dev": "vite --host 0.0.0.0", "build": "vite build", "test": "node --test timing.test.mjs src/navigation.test.js src/distance-model.test.js"},
-  "dependencies": {"react": "19.3.0", "react-dom": "19.3.0"},
-  "devDependencies": {"vite": "8.3.0", "@vitejs/plugin-react": "6.1.1"}
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "test": "node --test timing.test.mjs src/navigation.test.js src/distance-model.test.js src/demo/store.test.js",
+    "build:demo": "vite build --mode public-demo"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.0",
+    "@vitejs/plugin-react": "6.1.1"
+  }
 }

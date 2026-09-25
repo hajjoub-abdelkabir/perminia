@@ -22,6 +22,10 @@ jobs:
           npm test --prefix student/frontend
       - name: Fresh database, migrations, compiled UI and synthetic fixtures
         run: python scripts/showcase.py start
+      - name: Standalone static-demo build and network boundary
+        run: |
+          npm run build:demo --prefix student/frontend
+          python scripts/check_static_demo.py
       - name: Authentication, isolation, training and mocked AI tests
         run: python scripts/showcase.py test
       - name: Stop this project's services

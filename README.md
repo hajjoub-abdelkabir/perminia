@@ -19,6 +19,23 @@ The code also contains a Darija chat assistant with per-conversation memory, loc
 
 ## Quick start
 
+### Browser-only portfolio demo (Vercel)
+
+The public-demo build is a separate, self-contained presentation of the product. Switch between learner, instructor and manager without signing in. Reading, tasks and the short illustrative quiz share namespaced localStorage; reset affects only this demo. If storage is unavailable it falls back to memory. Chat responses are explicitly labelled, prewritten examples, not live AI. No real school data is requested or sent.
+
+```sh
+npm ci --prefix student/frontend
+npm run build:demo --prefix student/frontend
+python scripts/check_static_demo.py
+python -m http.server 5190 --bind 127.0.0.1 --directory student/frontend/dist
+```
+
+Open `http://localhost:5190`. The browser-only entry point excludes backend API clients from its bundle. Its timer and scoring are local simulations; server-side guarantees described for the Docker application do not apply to this presentation.
+
+For Vercel select **Vite**, root `student/frontend`, command `npm run build:demo`, output `dist`. The checked-in `vercel.json` sets the build/output configuration. No API keys or DB variables are needed. `vite --mode public-demo` sets the static-demo entry point at build time; the existing default build continues to run the full API-backed interface.
+
+### Full local application (Docker)
+
 Requirements: Docker Desktop with Linux containers (or Docker Engine + Compose v2+), Python 3.10+, and an available local port **5184**. The first build downloads dependencies; an internet connection is required.
 
 ```sh

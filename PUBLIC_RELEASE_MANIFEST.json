@@ -1,5 +1,5 @@
 {
-  "kind": "synthetic-technical-MVP",
+  "kind": "synthetic-technical-MVP-with-static-demo",
   "files": [
     {
       "path": ".dockerignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 945,
-      "sha256": "a3872875277b76225b211e568e8958e3663551d3b2a1d91c25e2dd9495c1eef6"
+      "bytes": 1125,
+      "sha256": "e8139d42d3d22d9be29ff91a4a414e16d9f39ce7ee5339003885231c3c289649"
     },
     {
       "path": ".gitignore",
@@ -43,13 +43,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 8126,
-      "sha256": "3816d8f46f54a2c26d48e2c2e3ba82c9c79faa8aa7e39b4dbc117feecffac94c"
+      "bytes": 9432,
+      "sha256": "5e9853ae2636d2a9939ce2c493ccaf8dc3d389bcf6bad33240ffac13cd4d4e5e"
+    },
+    {
+      "path": "scripts/check_static_demo.py",
+      "bytes": 766,
+      "sha256": "075339f382920285724666affc7b6ca6f737950e2e85ede6c63c123d51eafb94"
     },
     {
       "path": "scripts/prepare_public_release.py",
-      "bytes": 4926,
-      "sha256": "217b6fad646f6f991ebf99b06456e5f8cbf90806276b6b0fa79c4dfb8870a384"
+      "bytes": 4950,
+      "sha256": "d8afec827e3b5435da0a8e400b42fbf4a8a3e9f08682baa82659aa60f0804060"
     },
     {
       "path": "scripts/showcase.py",
@@ -523,8 +528,8 @@
     },
     {
       "path": "student/frontend/index.html",
-      "bytes": 486,
-      "sha256": "dfd013fb855ef2e0984c2eb66200003be1e02d0a5e14c2bec6797956a5a4074c"
+      "bytes": 1051,
+      "sha256": "c0e1eb8297fa97eff5aabaace6ec244464bcff6fe9461b9ac4e379d717ec8bf6"
     },
     {
       "path": "student/frontend/package-lock.json",
@@ -533,8 +538,8 @@
     },
     {
       "path": "student/frontend/package.json",
-      "bytes": 387,
-      "sha256": "fec764dbf3abeae110032e53dfc3049826ac8ed63f746622bcdb522ee7eb1e1b"
+      "bytes": 521,
+      "sha256": "fa8ec58ef851864e130cc2126b1e36fb6331b633deef815e20da6241e71121e5"
     },
     {
       "path": "student/frontend/public/brand/perminia-icon.png",
@@ -727,6 +732,26 @@
       "sha256": "aff4b47327bd271ca091b5f6b4481057a53dede5d0e8b24a4924e77014792b56"
     },
     {
+      "path": "student/frontend/src/demo/demo.css",
+      "bytes": 13768,
+      "sha256": "32b0d76ccebd9c9ed890dadc5c99f577d408c5ca2d959facb1477722ff2d9773"
+    },
+    {
+      "path": "student/frontend/src/demo/DemoApp.jsx",
+      "bytes": 17357,
+      "sha256": "a397550d657bb78ceac906fd814f3420be686dc76f461c86fed5249fbef0c12b"
+    },
+    {
+      "path": "student/frontend/src/demo/store.js",
+      "bytes": 6328,
+      "sha256": "9a785cf699887a8a94d10a926840a4c4b1361c6083168b04c7f9e853bca2d106"
+    },
+    {
+      "path": "student/frontend/src/demo/store.test.js",
+      "bytes": 1950,
+      "sha256": "98cfa25a6f0b4d2689a5f80d159b5f4c4c6e9756030d0734423efcdaef02abed"
+    },
+    {
       "path": "student/frontend/src/distance-model.js",
       "bytes": 490,
       "sha256": "64de8a1b511df94a937aef8363d66e4258bd0e8f47ff954f2ed8a19d10f306f3"
@@ -735,6 +760,11 @@
       "path": "student/frontend/src/distance-model.test.js",
       "bytes": 869,
       "sha256": "04185431ad4611469cdf532e86ba882703487edb7039326c51b41cb5b90dfb83"
+    },
+    {
+      "path": "student/frontend/src/entry.jsx",
+      "bytes": 122,
+      "sha256": "b4c6bf16ad4b12376de01d6b16c3af8523eec94d639644c783e04ed63eb57dbe"
     },
     {
       "path": "student/frontend/src/journey-api.js",
@@ -862,9 +892,14 @@
       "sha256": "a889d26cc9e70eb42e5c9cfcd6f9d3f3a10e02e5b0c59b477bb87be10d5a508f"
     },
     {
+      "path": "student/frontend/vercel.json",
+      "bytes": 413,
+      "sha256": "2f2540278b99e67bd524090ea9ff5bc71281397a695be776ace4656ac7e1d1c0"
+    },
+    {
       "path": "student/frontend/vite.config.js",
-      "bytes": 358,
-      "sha256": "8e0ae3bb0d335ba9798496aac5f801f86f909ca45aabd285a3f19b822390edd7"
+      "bytes": 473,
+      "sha256": "0bb50f1ef1c8c4297c1ddd008a0c0e7c222d4efd3cbe98836e3b4b8ed345cb2a"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",

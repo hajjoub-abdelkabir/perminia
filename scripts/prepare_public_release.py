@@ -13,7 +13,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 ROOT_FILES = ('README.md', 'SECURITY.md', 'THIRD_PARTY_NOTICES.md', '.gitignore', '.dockerignore',
               '.env.example', 'compose.showcase.yaml', 'Dockerfile.showcase')
-SCRIPT_FILES = ('showcase.py', 'prepare_public_release.py')
+SCRIPT_FILES = ('showcase.py', 'prepare_public_release.py', 'check_static_demo.py')
 TREES = ('student/backend', 'student/frontend', 'docs/public', '.github')
 SKIP_PARTS = {'node_modules', 'dist', '__pycache__', '.pytest_cache', '.venv', '.git'}
 SOURCE_SUFFIXES = {'.py','.sql','.ini','.txt','.lock','.json','.js','.jsx','.mjs','.css','.html',
